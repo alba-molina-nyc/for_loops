@@ -24,15 +24,7 @@ try with less code:
 """
 
 for i in range(0,100,1):
-    #  print(sorted(range(0,100,1)), 'ascending')
-    #  print(sorted(range(0,100,1), reverse=True), 'descending')
+     print(sorted(range(0,100,1)), 'ascending')
+     print(sorted(range(0,100,1), reverse=True), 'descending')
      break
 
-for i in range(0,100,1):
-    while i != None:
-        print(i)
-        break
-
-for i in range(0,100,1):
-    print(sorted(range(0,100,1), reverse=True))
-    break
