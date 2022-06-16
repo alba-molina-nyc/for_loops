@@ -68,7 +68,10 @@ for n in numbs:
 """8. Create a loop that logs the numbers from 81-26 (descending)"""
 
 for i in range(0,100,1):
-    print(sorted(range(0,100,1)[26:81], reverse=True))
+    # print(sorted(range(0,100,1)[26:81], reverse=True))
     break
 
 """9. Create a loop that logs the numbers from 3-90 that are multiples of 3 (ascending)"""
+
+multiples_3 = [i for i in range(3,90) if i % 3 == 0 ]
+print(multiples_3)
