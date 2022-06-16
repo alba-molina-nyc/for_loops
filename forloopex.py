@@ -19,18 +19,25 @@ try with less code:
 """
 
 for i in range(0,100,1):
-     print(sorted(range(0,100,1)), 'ascending')
-     print(sorted(range(0,100,1), reverse=True), 'descending')
+    #  print(sorted(range(0,100,1)), 'ascending')
+    #  print(sorted(range(0,100,1), reverse=True), 'descending')
      break
 
 """3. Create a loop that logs the EVEN numbers from 0-98 (ascending)"""
 
 for i in range(0,100,1):
     if i % 2 == 0:
-        print(i, 'evens')
+        # print(i, 'evens')
+        break
   
 
 """4. Create a loop that logs the EVEN numbers from 98-0 (descending)"""
+
+for i in range(0,100,1):
+    if i % 2 == 0:
+         print(sorted(range(0,100,1), reverse=True), 'modules ascending')
+         break
+
 
 """5. Create a loop that logs the ODD numbers from 0-99 (ascending)"""
 
