@@ -50,5 +50,8 @@ print(sorted(desc_slice, reverse=True))
 
 
 """9. Create a loop that logs the numbers from 3-90 that are multiples of 3 (ascending)"""
+multiples_3 = [i for i in range(3,90) if i % 3 == 0 ]
+print(multiples_3)
+
 
 
