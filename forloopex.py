@@ -35,11 +35,16 @@ for i in range(0,100,1):
 
 for i in range(0,100,1):
     if i % 2 == 0:
-         print(sorted(range(0,100,1), reverse=True), 'modules ascending')
-         break
+        print(sorted(range(0,100,1), reverse=True))
+        break
 
 
 """5. Create a loop that logs the ODD numbers from 0-99 (ascending)"""
+
+for i in range(0,100,1):
+    if i % 2 != 0:
+        print(i)
+        break
 
 """6. Create a loop that logs the ODD numbers from 99-0 (descending)"""
 
