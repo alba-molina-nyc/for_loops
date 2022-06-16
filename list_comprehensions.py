@@ -41,9 +41,12 @@ odds_descending = [i for i in range(0,100,1) if i % 2 == 1]
 """7. Create a loop that logs the numbers from 49-72 (ascending)"""
 
 asc_slice = [i for i in range(49,73,1)[:49] if i]
-print(asc_slice)
+# print(asc_slice)
 
 """8. Create a loop that logs the numbers from 81-26 (descending)"""
+
+desc_slice = [i for i in range(26,82,1)[:26] if i]
+print(sorted(desc_slice, reverse=True))
 
 
 """9. Create a loop that logs the numbers from 3-90 that are multiples of 3 (ascending)"""
