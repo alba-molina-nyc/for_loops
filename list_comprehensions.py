@@ -36,11 +36,12 @@ odds_ascending = [i for i in range(0,100,1) if i % 2 == 1]
 """6. Create a loop that logs the ODD numbers from 99-0 (descending)"""
 
 odds_descending = [i for i in range(0,100,1) if i % 2 == 1]
-print(sorted(odds_ascending, reverse=True))
+# print(sorted(odds_ascending, reverse=True))
 
 """7. Create a loop that logs the numbers from 49-72 (ascending)"""
 
-
+asc_slice = [i for i in range(49,73,1)[:49] if i]
+print(asc_slice)
 
 """8. Create a loop that logs the numbers from 81-26 (descending)"""
 
