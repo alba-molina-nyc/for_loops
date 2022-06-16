@@ -35,7 +35,7 @@ for i in range(0,100,1):
 
 for i in range(0,100,1):
     if i % 2 == 0:
-        print(sorted(range(0,100,1), reverse=True))
+        # print(sorted(range(0,100,1), reverse=True))
         break
 
 
@@ -43,12 +43,27 @@ for i in range(0,100,1):
 
 for i in range(0,100,1):
     if i % 2 != 0:
-        print(i)
+        # print(i)
         break
 
 """6. Create a loop that logs the ODD numbers from 99-0 (descending)"""
+for i in range(0,100,1):
+    if i % 2 != 0:
+        # print(sorted(range(0,100,1), reverse=True))
+        break
 
 """7. Create a loop that logs the numbers from 49-72 (ascending)"""
+for i in range(49,73,1):
+    # print(i)
+    break
+
+"""using slicing"""
+
+numbs = range(0,100,1)
+
+for n in numbs:
+    print(sorted(numbs[49:]))
+    break
 
 """8. Create a loop that logs the numbers from 81-26 (descending)"""
 
