@@ -1,4 +1,5 @@
-"""lists and arrays are used to store data and they both allow indexing, slicing and iterating
+"""lists and arrays are used to store data and they both allow indexing, slicing and 
+
 
 to use an array in python you need to download the NumPy package or the array module
 
@@ -40,3 +41,38 @@ If you need to store a relatively short sequence of items and you don't plan to 
 If you have a very long sequence of items, consider using an array. This structure offers more efficient data storage.
 If you plan to do any numerical operations with your combination of items, use an array. Data analytics and data science rely heavily on (mostly NumPy) arrays.
 """
+
+# 1 - Define an empty list named foods 
+
+foods = []
+# print(type(foods))
+
+# 2 - Add the strings 'pizza' & 'cheeseburger' & 'taco' to the foods list
+
+foods.append('cheeseburger')
+foods.append('pizza')
+foods.append('taco')
+print(foods)
+
+# 3 Access the string 'pizza' (based upon its known position 
+
+for i in foods:
+    print(foods[2])
+    break
+
+# 4 Insert the string 'tofu' in the foods array between 'pizza' and 'taco'
+
+"""
+---------------------------------------------------------------------------------------------------------------------------------------------
+in python the insert method allows you to insert an element to a list at the specified index 
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+i.e.)
+
+list_name.insert(index, item_inserting)
+
+"""
+for i in foods:
+    foods.insert(2, 'tofu')
+    print(foods)
+    break
