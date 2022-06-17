@@ -42,25 +42,27 @@ If you have a very long sequence of items, consider using an array. This structu
 If you plan to do any numerical operations with your combination of items, use an array. Data analytics and data science rely heavily on (mostly NumPy) arrays.
 """
 
-# 1 - Define an empty list named foods 
-
+""" 1- Define an empty list named foods 
+"""
 foods = []
 # print(type(foods))
 
-# 2 - Add the strings 'pizza' & 'cheeseburger' & 'taco' to the foods list
+"""2 - Add the strings 'pizza' & 'cheeseburger' & 'taco' to the foods list"""
 
 foods.append('cheeseburger')
 foods.append('pizza')
 foods.append('taco')
-print(foods)
+# print(foods)
 
-# 3 Access the string 'pizza' (based upon its known position 
+"""3 Access the string 'pizza' (based upon its known position)
+"""
+# print(foods[1])
 
 for i in foods:
-    print(foods[2])
+    # print(foods[1])
     break
 
-# 4 Insert the string 'tofu' in the foods array between 'pizza' and 'taco'
+"""4 Insert the string 'tofu' in the foods array between 'pizza' and 'taco'"""
 
 """
 ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -74,5 +76,65 @@ list_name.insert(index, item_inserting)
 """
 for i in foods:
     foods.insert(2, 'tofu')
-    print(foods)
+    # print(foods)
     break
+
+
+
+
+"""5 replace the string 'aple' in the array with the string 'chicken nuggets' using index"""
+
+a_list = ['aple', 'orange', 'aple', 'banana', 'grape', 'aple']
+
+a_list[0] ='chicken nuggets'
+a_list[2] = 'chicken nuggets'
+
+b_list = a_list
+# print(b_list)
+
+
+
+"""Replace a particular item in a Python list with a for loop"""
+a_list = ['aple', 'orange', 'aple', 'banana', 'grape', 'aple']
+# print(a_list)
+for i in range(len(a_list)):
+    if a_list[i] == 'aple':
+        a_list[i] = 'apple'
+# print(a_list)
+
+
+
+"""using list comprehensions"""
+
+"""Replace a particular item in a Python list using a list comprehension"""
+a_list = ['aple', 'orange', 'aple', 'banana', 'grape', 'aple']
+# print(a_list)
+a_list = ['apple' if item == 'aple' else item for item in a_list]
+# print(a_list)
+
+
+"""change all values in a list using a function
+"""
+a_list = ['aple', 'orange', 'aple', 'banana', 'grape', 'aple']
+
+def replace_all(list_to_replace, item_to_replace, item_to_replace_with):
+    return [item_to_replace_with if item == item_to_replace else item for item in list_to_replace]
+
+replaced_list = replace_all(a_list, 'aple', 'apple')
+# print(replaced_list)
+
+
+a_list = ['aple', 'ornge', 'aple', 'banana', 'grape', 'aple']
+for i in range(len(a_list)):
+    if a_list[i] in ['aple', 'ornge']:
+        a_list[i] = 'typo'
+# print(a_list)
+
+
+a_list = ['aple', 'ornge', 'aple', 'banana', 'grape', 'aple']
+for i in range(len(a_list)):
+    if a_list[i] == 'aple':
+        a_list[i] = 'apple'
+    elif a_list[i] == 'ornge':
+        a_list[i] = 'orange'
+print(a_list)
